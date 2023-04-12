@@ -1,12 +1,50 @@
-.titulo {
-    color: blue;
-    text-align: center;
+.bg-home{
+  width: 100vw;
+  min-height: calc(100vh - 64px);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url('https://marketplace.canva.com/EAFILo5uX0s/1/0/1600w/canva-fundo-para-zoom-efeito-luz-3d-azul-VsiCxtld7Ck.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.img {
-    width: 500px;
-    height: 500px;
-    display: block;
-    margin: 0 auto;
-    
+.card{
+  width: 340px;
+  height: 50vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 24px;
+  background: linear-gradient(90deg, #05b3f5 0%, #343198 100%);
 }
+
+.card-title{
+  font-weight: bold!important;
+  color: #ffffff;
+}
+
+form{
+  width: 270px;
+}
+
+label{
+  color: #ffffff!important;
+  font-weight: bold!important;
+}
+
+.form-input{
+  width: 100%;
+}
+
+.form-btn{
+  background-color:black!important;
+  color: white!important;
+}
+

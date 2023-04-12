@@ -1,0 +1,20 @@
+.bg-menu {
+    background: linear-gradient(90deg,  #05b3f5 0%, #343198 100%);
+}
+
+.title {
+    padding: 10px;
+    font-weight: bold!important;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home {
+    font-weight: bold;
+}
+.contato{
+    font-weight: bold;
+}
