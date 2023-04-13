@@ -1,40 +1,32 @@
 import React from 'react';
-import { Typography, Grid, TextField, Button} from '@material-ui/core';
-import { Box } from '@mui/material';
+
+import {Typography, Grid, Button} from '@material-ui/core';
+import {Box} from '@mui/material';
+
 import './Home.css';
 
 function Home() {
-
     return (
-        <Grid container className="bg-home">
-        <Grid item xs={12} sm={12}>
-  
-          <Box display="flex" justifyContent="center" alignItems="center" height="80vh">
-  
-            <Box className="card">
-              <Typography className='card-title' variant="h4" align="center">
-                Login
-              </Typography>
-  
-              <form>
-                <Box marginY={4}>
-                  <TextField className='form-input' id="standard-basic" type="email" label="Email" required />
-                </Box>
-  
-                <Box marginY={4}>
-                  <TextField className='form-input' id="standard-basic" type="password" label="Senha" required />
-                </Box>
-  
-                <Button className="form-btn" variant="contained">
-                  Acessar
-                </Button>
-              </form>
-  
-            </Box>
-          </Box>
-  
-        </Grid>
-      </Grid>
+        <>
+            <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
+                <Grid alignItems="center" item xs={6}>
+                    <Box paddingX={20} >
+                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Seja bem vinde!</Typography>
+                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>Expresse aqui os seus pensamentos e opiniões!</Typography>
+                    </Box>
+                    <Box display="flex" justifyContent="center">
+                        <Box marginRight={1}>
+                        </Box>
+                        <Button variant="outlined" className='botao'>Ver Postagens</Button>
+                    </Box>
+                </Grid>
+                <Grid item xs={6} className='img' >
+                    <img src="https://mystickermania.com/cdn/stickers/anime/spirited-away-susuwatari-512x512.png" alt="" width="700px" height="560px" />
+                </Grid>
+                <Grid xs={12} className='postagens' style={{ backgroundColor: 'white'}}>
+                </Grid>
+            </Grid>
+        </>
     );
 }
 

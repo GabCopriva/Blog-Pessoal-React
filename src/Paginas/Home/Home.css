@@ -1,50 +1,19 @@
-.bg-home{
-  width: 100vw;
-  min-height: calc(100vh - 64px);
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-image: url('https://marketplace.canva.com/EAFILo5uX0s/1/0/1600w/canva-fundo-para-zoom-efeito-luz-3d-azul-VsiCxtld7Ck.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.caixa{
+  background: linear-gradient(90deg,  #05b3f5 13%, #343198 100%);
 }
 
-.card{
-  width: 340px;
-  height: 50vh;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  border-radius: 24px;
-  background: linear-gradient(90deg, #05b3f5 0%, #343198 100%);
+.titulo{
+ color: white !important;
+ font-weight: bold !important;
 }
 
-.card-title{
-  font-weight: bold!important;
-  color: #ffffff;
+.botao{
+  border-color: white !important;
+  background-color: #3F51B5;
+  color: white !important;
 }
 
-form{
-  width: 270px;
-}
-
-label{
-  color: #ffffff!important;
-  font-weight: bold!important;
-}
-
-.form-input{
-  width: 100%;
-}
-
-.form-btn{
-  background-color:black!important;
-  color: white!important;
+.postagens{
+  background-color: white;
 }
 
