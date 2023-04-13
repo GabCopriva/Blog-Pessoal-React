@@ -23,7 +23,7 @@ function Home() {
                 <Grid item xs={6} className='img' >
                     <img src="https://mystickermania.com/cdn/stickers/anime/spirited-away-susuwatari-512x512.png" alt="" width="700px" height="560px" />
                 </Grid>
-                <Grid xs={12} className='postagens' style={{ backgroundColor: 'white'}}>
+                <Grid xs={12} className='postagens'>
                 </Grid>
             </Grid>
         </>

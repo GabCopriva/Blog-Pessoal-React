@@ -3,7 +3,7 @@
 }
 
 .title {
-    padding: 10px;
+    padding: 1px;
     font-weight: bold!important;
 }
 
@@ -13,5 +13,21 @@
 }
 
 .home {
+    font-weight: bold;
+}
+
+.post {
+    font-weight: bold;
+}
+
+.tema {
+    font-weight: bold;
+}
+
+.cadastrar {
+    font-weight: bold;
+}
+
+.logout {
     font-weight: bold;
 }
