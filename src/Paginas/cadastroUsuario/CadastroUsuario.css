@@ -1,0 +1,16 @@
+.imagem2{
+    background-image: url(src/assets/EU5ttk4WoAQmu37.jpg);
+    background-repeat: no-repeat;
+    width: 100vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.texto2{
+    font-weight: bold !important;
+}
+
+.btnCancelar {
+    margin-right: 20px !important;
+}
