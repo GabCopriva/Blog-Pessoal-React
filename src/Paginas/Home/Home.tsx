@@ -2,7 +2,7 @@ import React from 'react';
 
 import {Typography, Grid, Button} from '@material-ui/core';
 import {Box} from '@mui/material';
-
+import TabPostagem from '../../components/Postagens/TabPostagem/TabPostagem';
 import './Home.css';
 
 function Home() {
@@ -24,6 +24,7 @@ function Home() {
                     <img src="https://mystickermania.com/cdn/stickers/anime/spirited-away-susuwatari-512x512.png" alt="" width="700px" height="560px" />
                 </Grid>
                 <Grid xs={12} className='postagens'>
+                    <TabPostagem />
                 </Grid>
             </Grid>
         </>
