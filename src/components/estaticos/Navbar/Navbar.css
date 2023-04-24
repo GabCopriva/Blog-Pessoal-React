@@ -2,32 +2,14 @@
     background: linear-gradient(90deg,  #05b3f5 0%, #343198 100%);
 }
 
-.title {
-    padding: 1px;
-    font-weight: bold!important;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.home {
+.cursor{
+    cursor: pointer;
+    color: white;
     font-weight: bold;
+    padding: 20px;
 }
 
-.post {
-    font-weight: bold;
-}
 
-.tema {
-    font-weight: bold;
-}
-
-.cadastrar {
-    font-weight: bold;
-}
-
-.logout {
-    font-weight: bold;
+.text-decorator-none{
+    text-decoration: none;
 }
