@@ -2,16 +2,21 @@ import React, { useState, useEffect, ChangeEvent} from 'react';
 import { Grid, Typography, TextField, Button } from '@material-ui/core';
 import { Box } from '@mui/material';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
-import useLocalStorage from 'react-use-localstorage';
 import { login } from '../../services/Service';
 import UsuarioLogin from '../../models/UsuarioLogin';
 
 import './Login.css';
 
+import { useDispatch } from 'react-redux';
+import { addToken } from '../../store/tokens/actions';
+
 function Login() {
 
-    let history = useNavigate(); 
-    const [token, setToken] = useLocalStorage('token');  //hooks que vão manipular o nosso local storage para gravar o token
+    let navigate= useNavigate(); 
+
+    const dispatch = useDispatch();
+
+    const [token, setToken] = useState('');  //hooks que vão manipular o nosso local storage para gravar o token
     const [userLogin, setUserLogin] = useState<UsuarioLogin>({ //useState define como uma determinada variavel será utilizada quando o comp. for renderizado
 
         id: 0,
@@ -25,7 +30,8 @@ function Login() {
         //useEffect é um hook de efeito colateral, sempre executa uma função quando o que estiver no seu array é diferente
         useEffect(() => {
             if (token !== '') {
-                history('/Home')
+                dispatch(addToken(token));
+                navigate('/Home')
             }
         }, [token])
 
